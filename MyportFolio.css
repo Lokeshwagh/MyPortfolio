@@ -7,7 +7,7 @@
     font-family: 'Foldit', cursive;
     font-family: 'Konkhmer Sleokchher', cursive;
     font-family: 'Mooli', sans-serif;
-    
+    overflow-x: hidden;
 }
 
 body{
@@ -22,16 +22,21 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 0  0 10px rgb(237, 237, 237);
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     transition: all linear 0.2s;
+    z-index: 11;
 }
 
 ::-webkit-scrollbar{
       height: 0px;
-      width: .2rem;
+      width: 5px;
+      scroll-behavior: smooth;
+      
 }
 ::-webkit-scrollbar-track{
-    background:rgb(0, 0, 0);
+    background:rgb(40, 39, 39);
+    box-shadow: 0 0 2px cyan,
+    0 0 6px cyan,0 0 0px cyan;
 }
 ::-webkit-scrollbar-thumb{
     background-color:rgb(14, 159, 169);
@@ -160,6 +165,9 @@ ul li a:hover{
     0 0 6px cyan,0 0 0px cyan;
 }
 @media screen and (max-width: 570px) {
+    .nav{
+        overflow-y: hidden;
+    }
     #linkes a{
         margin: 30px 0 0 20px;
     }
@@ -177,6 +185,7 @@ ul li a:hover{
     #menu{
         display: block;
         padding-left: 80px;
+        font-size: 50px;
     }
      ul{
         display: flex;
@@ -203,7 +212,7 @@ ul li a:hover{
     #Home{
         margin-top: -120px;
     }
-    nav ul .active {
+    .active {
         opacity: 1;
     }
  
@@ -266,7 +275,7 @@ ul li a:hover{
 /* Second Section */
 #secContainter{
     
-    margin-top: 50px;
+    margin: 50px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -294,10 +303,14 @@ ul li a:hover{
 
 /* skill section  **********************************/
 /* */
-
+#Skill{
+    height: 100vh;
+    overflow-y: hidden;
+}
 .sk{
     width: 100%;
     display: flex;
+    padding: 0% 10%;
 }
 
 .container1{
@@ -425,7 +438,13 @@ small{
     animation: glow 0.4s linear forwards;
    animation-delay: calc(var(--i)*0.3s);
 }
+
+
 @media screen and (max-width: 570px) {
+    
+    #About{
+        height: 150vh;
+    }
     #secContainter{
         
         display: block;
@@ -437,7 +456,7 @@ small{
      #img2{
        margin-left: 30px;
     }#Parabout{
-        padding-right: 8px;
+        padding-right: 30px;
         margin: 0px;
         width: 100vw;
         position: absolute;
@@ -455,8 +474,8 @@ small{
 
 @media screen and (max-width: 570px) {
 #Skill{
-    margin-top: 30px;
-    height: 100px;
+    margin-top: 15px;
+    height: 150vh;
 }
     .sk{
     display: flex;
@@ -466,8 +485,8 @@ small{
   }
     
     .container1{
-        width: 80%;
-      height: 60%;
+        width: 90%;
+        height: 100%;
         padding:  90px 0px 0px 0px;
         margin-left: 10px;
         font-size:15px ;
@@ -478,24 +497,92 @@ small{
     }
     
  .skillss{
-    width: 80%;
+    width: 90%;
+    height: 100%;
     padding:  0px 0px 0px 0px;
     margin-left: 10px;
     font-size:15px ;
     display: inline;
-    position: relative;
+    
 } 
 }
+/* My project sectiion */
+#project{
+     margin: 50px 0 50px 0;
+}
+#mainProject{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 80px 50px 40px 50px;
+    
+    width: 100vw;
+}
+
+.eachproject{
+    width: 300px;
+    height: 100%;
+    border: 2px solid cyan;
+    border-radius: 20px;
+}
+.imgProject{
+    width: 200px;
+    height: 104px;
+    border-radius: 10px;
+}
+.projectss{
+    padding: 30px 10px 30px 10px;
+    height: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.projectdiscription{
+    padding-top: 20px;
+}
+.pbtn{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: black;   
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #278ab1;
+    box-shadow: 0 0 5px cyan,
+    0 0 2px cyan,0 0 10px cyan; 
+}
+.eachproject:hover{
+    
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 10px cyan,
+    0 0 10px cyan,0 0 30px cyan;
+}
+
+@media screen and (max-width: 570px) {
+   
+    .mainProject{
+                 height: 100%;
+               }
+          
+    
+
+
+}
+
 
 /* Myeducation section ************************/
 #edu-row{
-display: flex;
-  flex-direction: column;
-  width: 800px;
-  height: 78vh;
-  justify-content: space-around;
-  margin: 50px 0px 0 400px;
-  padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 78vh;
+    justify-content: space-around;
+    margin: 50px 0px 0 0px;
+    padding-left: 40px;
+    align-items: center;
 }
 .year{
     

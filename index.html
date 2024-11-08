@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="logotab.png" />
     <title>MyPortfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,17 @@
 
 </head>
 <body id="body1" >
-    <!-- CURSER -->
-    <div >
-        <h1 class="curser"></h1>  
-    </div>
-
+    <!-- Navigation bar of the portfolio -->
      <div id="header">
         <div id="container">
-            <nav>
+            <nav class="nav">
                 <img src="logo.png" alt="not load" id="logo">
-                <i class='bx bx-menu-alt-right' id="menu"></i>
-                <ul >
+                <i class='bx bx-menu-alt-right' id="menu" onclick="toggleMenu()" ></i>
+                <ul id="nav-links">
                     <li><a class="active" href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#Edu">Education</a></li>
                 </div>
             </nav>
@@ -43,8 +41,8 @@
                         <a href="https://www.linkedin.com/in/lokesh-wagh-bab067228/" ><i class='bx bxl-linkedin' target="_blank"></i></a>
                         <a href="https://github.com/Lokeshwagh" target="_blank"><i class='bx bxl-github' ></i></a>
                         <a href="https://www.instagram.com/lokeshwagh34/" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                        <a href="pubhagat137@gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a></div>
-                        <div class="divbtn1" ><button id="btn1"><a href="#About" style="color: #000; text-decoration: none;">Learn More</a></button>
+                        <a href="mailto:lokeshwagh675@gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a></div>
+                        <div class="divbtn1" ><button id="btn1"><a href="#About" style="color: #000; text-decoration: none;">About More</a></button>
                         <button class="btn2"><a href="Resume.pdf" download="" style="color: #000; text-decoration: none;" class="downCV">Download CV</a></button></div>
             </div>
         </div>
@@ -53,12 +51,12 @@
 
     <section id="About"> 
         <div id="secContainter">
-                      <img src="sakayi.jpg" alt="image is not load" id="img2" >
-                      <p id="Parabout"><span style="font-size: 40px; color: rgb(221, 100, 98);"><b>About Me</b></span><br><b><span style="font-size: 19px;"> MERN Stack Developer</span></b><br><br>Hello EveryOne,My name is Lokesh , I kickstart My Career as a FullStack webdeveloper , MERN Stack Developer Driven web developer specializing in responsive design and performance optimization. My unique approach combines artistic creativity with technical precision to deliver websites that not only look amazing but also load blazingly fast. Let's collaborate to bring your digital vision to life</p>
+                      <img src="imageDami.jpeg" alt="image is not load" id="img2" >
+                      <p id="Parabout"><span style="font-size: 40px; color: rgb(221, 100, 98);"><b>About Me</b></span><br><b><span style="font-size: 19px;"> MERN Stack Developer</span></b><br><br>I'm Lokesh Gajanan Wagh, a final-year student at Sipna College of Engineering and Technology with a strong interest in web development. Over the course of my studies, I have learned several programming languages, including C,     Java, Js, React.js, HTML, CSS, and Node.js. I completed my 12th grade with a score of 85.67% and maintain an overall 8+ pointer in my engineering coursework. I had the opportunity to intern at <span style="color: cyan;">HashedBit Innovation Pvt. Ltd.</span> , where I worked on significant projects, such as JSCMS, Educare and LiveStock Cattle Hub.</p>
                     </div><br>
     </section>  
         <!-- Skill Section -->
-     <section id="Skill" style="height: 120vh; overflow-y: hidden;">
+     <section id="Skill" >
         <h1 style="margin-top: 50px; font-size: 50px;" ><center>My <span style="color: rgb(27, 137, 206); ">Skills</span></center></h1>
         <section class="sk">
             <div class="container1"  id="Skillls">
@@ -161,11 +159,54 @@
             </div>
         </section>
     </section>
-    <!-- educational background  -->
-     <section class="edu" id="Edu" style="height: 100vh; overflow-y: hidden;padding-top: 40px;">
-        <h1><center style="font-size: 30px;padding-right: 100px;">My <span style="color:#1ca3bb;">Education</span></center>
+
+
+    <!-- Project Seaction  -->
+     <section  id="project">
+        <h1><center style="font-size: 50px;">My <span style="color: rgb(27, 137, 206);">Projects</span></center>
         </h1>
-        <center><span id="spanedit"></span></center>
+      
+        
+          <div id="mainProject" class="mainProject">
+            <div class="eachproject">
+                <center><div class="projectss">
+                    <img src="india.png" alt="Cattle" class="imgProject">    
+                    <div class="projectdiscription">Knowledge checker the is Online Quiz Application where the quiz is end in 40 sec you have to answer it in this time period</div>
+                    <button class="pbtn"><a href="https://github.com/Lokeshwagh/quiz."   style="color: #000;">Source code</a> </button>
+                    <button class="pbtn"><a href=" https://quizonhistoryofindia.netlify.app/"   style="color: #000;">Link</a> </button>
+                    
+                </div>
+            </center>
+                
+            </div>
+            
+            <div class="eachproject">
+                <center><div class="projectss">
+                   <img src="elerarn.jpg" alt="Cattle" class="imgProject">
+                    <div class="projectdiscription">LiveStock Cattle hub is online platform for selling the cow and buying the cow by the owner as well there is blogs on the cow</div>
+                    <button class="pbtn"><a href="https://github.com/Lokeshwagh/E_Learning-Management-System"   style="color: #000;">Source code</a> </button>  
+                    <button class="pbtn"><a href="https://github.com/Lokeshwagh/E_Learning-Management-System"   style="color: #000;">Source code</a> </button>
+
+                </div></center> 
+            </div>
+            <div class="eachproject">
+               <center> <div class="projectss" >
+                             <img src="cattleproject.png" alt="Cattle" class="imgProject">
+                             <div class="projectdiscription">LiveStock Cattle hub is online platform for selling the cow and buying the cow by the owner as well there is blogs on the cow</div>
+                            <button class="pbtn"><a href="https://github.com/Lokeshwagh/LiveStock-Cattlehub"   style="color: #000;">Source code</a> </button>  
+                            <button class="pbtn"><a href="https://ct2-hy23.vercel.app/"   style="color: #000;">Link</a> </button>       
+                </div>
+               </center>
+          </div>
+        </div>
+     </section>  
+
+    <!-- educational background  -->
+     <section class="edu" id="Edu" style="height: 110vh; overflow-y: hidden;padding-top: 40px;">
+        <center><h1 style="font-size: 50px;">My <span style="color:#1ca3bb;">Education</span>
+        </h1>
+        <span id="spanedit" style="width: 400px;"></span>
+        
           <div id="edu-row">
             <div class="edu-content">
             <div class="content">
@@ -192,7 +233,7 @@
                  </p>
             </div>
           </div>
-        </div>
+        </div></center>
      </section>        
        
     

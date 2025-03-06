@@ -277,7 +277,7 @@ ul li a:hover{
     
     margin: 50px 0px 0px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100vw;
     height: 100vh;
     padding: 10% 5%;
@@ -286,8 +286,7 @@ ul li a:hover{
     border: #000;
     border-radius: 5%;
     height: 45vh;
-    width: 250px;
-    
+    width: 250px;   
     box-shadow: 0 0 40px #1ca3bb;
     animation: slideTop 6s ease forwards ; 
     animation-delay: 0s;
